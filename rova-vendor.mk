@@ -179,7 +179,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rova/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
     vendor/xiaomi/rova/proprietary/vendor/bin/audioflacapp:$(TARGET_COPY_OUT_VENDOR)/bin/audioflacapp \
     vendor/xiaomi/rova/proprietary/vendor/bin/cdsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/cdsprpcd \
-    vendor/xiaomi/rova/proprietary/vendor/bin/chargeonlymode:$(TARGET_COPY_OUT_VENDOR)/bin/chargeonlymode \
     vendor/xiaomi/rova/proprietary/vendor/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd \
     vendor/xiaomi/rova/proprietary/vendor/bin/dpmQmiMgr:$(TARGET_COPY_OUT_VENDOR)/bin/dpmQmiMgr \
     vendor/xiaomi/rova/proprietary/vendor/bin/energy-awareness:$(TARGET_COPY_OUT_VENDOR)/bin/energy-awareness \
@@ -1084,28 +1083,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rova/proprietary/vendor/radio/qcril_database/upgrade/3_version_update_wps_config.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/3_version_update_wps_config.sql \
     vendor/xiaomi/rova/proprietary/vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/4_version_update_ecc_table.sql \
     vendor/xiaomi/rova/proprietary/vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/5_version_update_ecc_table.sql \
-    vendor/xiaomi/rova/proprietary/vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/6_version_update_ecc_table.sql \
-    vendor/xiaomi/rova/proprietary/vendor/res/charger/battery_fail.png:$(TARGET_COPY_OUT_VENDOR)/res/charger/battery_fail.png \
-    vendor/xiaomi/rova/proprietary/vendor/res/charger/battery_image_0.png:$(TARGET_COPY_OUT_VENDOR)/res/charger/battery_image_0.png \
-    vendor/xiaomi/rova/proprietary/vendor/res/charger/battery_image_1.png:$(TARGET_COPY_OUT_VENDOR)/res/charger/battery_image_1.png \
-    vendor/xiaomi/rova/proprietary/vendor/res/charger/battery_image_2.png:$(TARGET_COPY_OUT_VENDOR)/res/charger/battery_image_2.png \
-    vendor/xiaomi/rova/proprietary/vendor/res/charger/battery_image_3.png:$(TARGET_COPY_OUT_VENDOR)/res/charger/battery_image_3.png \
-    vendor/xiaomi/rova/proprietary/vendor/res/charger/battery_image_4.png:$(TARGET_COPY_OUT_VENDOR)/res/charger/battery_image_4.png \
-    vendor/xiaomi/rova/proprietary/vendor/res/charger/battery_image_5.png:$(TARGET_COPY_OUT_VENDOR)/res/charger/battery_image_5.png \
-    vendor/xiaomi/rova/proprietary/vendor/res/charger/battery_image_6.png:$(TARGET_COPY_OUT_VENDOR)/res/charger/battery_image_6.png \
-    vendor/xiaomi/rova/proprietary/vendor/res/charger/battery_image_7.png:$(TARGET_COPY_OUT_VENDOR)/res/charger/battery_image_7.png \
-    vendor/xiaomi/rova/proprietary/vendor/res/charger/battery_num_0.png:$(TARGET_COPY_OUT_VENDOR)/res/charger/battery_num_0.png \
-    vendor/xiaomi/rova/proprietary/vendor/res/charger/battery_num_1.png:$(TARGET_COPY_OUT_VENDOR)/res/charger/battery_num_1.png \
-    vendor/xiaomi/rova/proprietary/vendor/res/charger/battery_num_10.png:$(TARGET_COPY_OUT_VENDOR)/res/charger/battery_num_10.png \
-    vendor/xiaomi/rova/proprietary/vendor/res/charger/battery_num_2.png:$(TARGET_COPY_OUT_VENDOR)/res/charger/battery_num_2.png \
-    vendor/xiaomi/rova/proprietary/vendor/res/charger/battery_num_3.png:$(TARGET_COPY_OUT_VENDOR)/res/charger/battery_num_3.png \
-    vendor/xiaomi/rova/proprietary/vendor/res/charger/battery_num_4.png:$(TARGET_COPY_OUT_VENDOR)/res/charger/battery_num_4.png \
-    vendor/xiaomi/rova/proprietary/vendor/res/charger/battery_num_5.png:$(TARGET_COPY_OUT_VENDOR)/res/charger/battery_num_5.png \
-    vendor/xiaomi/rova/proprietary/vendor/res/charger/battery_num_6.png:$(TARGET_COPY_OUT_VENDOR)/res/charger/battery_num_6.png \
-    vendor/xiaomi/rova/proprietary/vendor/res/charger/battery_num_7.png:$(TARGET_COPY_OUT_VENDOR)/res/charger/battery_num_7.png \
-    vendor/xiaomi/rova/proprietary/vendor/res/charger/battery_num_8.png:$(TARGET_COPY_OUT_VENDOR)/res/charger/battery_num_8.png \
-    vendor/xiaomi/rova/proprietary/vendor/res/charger/battery_num_9.png:$(TARGET_COPY_OUT_VENDOR)/res/charger/battery_num_9.png \
-    vendor/xiaomi/rova/proprietary/vendor/res/charger/battery_scale.png:$(TARGET_COPY_OUT_VENDOR)/res/charger/battery_scale.png
+    vendor/xiaomi/rova/proprietary/vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/6_version_update_ecc_table.sql
 
 PRODUCT_PACKAGES += \
     libaudio_log_utils \
