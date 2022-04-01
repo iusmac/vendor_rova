@@ -44,6 +44,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rova/proprietary/vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb \
     vendor/xiaomi/rova/proprietary/vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Headset_cal.acdb \
     vendor/xiaomi/rova/proprietary/vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Speaker_cal.acdb \
+    vendor/xiaomi/rova/proprietary/vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_workspaceFile.qwsp \
     vendor/xiaomi/rova/proprietary/vendor/etc/acdbdata/QRD/msm8917-tmo-snd-card/QRD_TMO_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/msm8917-tmo-snd-card/QRD_TMO_Bluetooth_cal.acdb \
     vendor/xiaomi/rova/proprietary/vendor/etc/acdbdata/QRD/msm8917-tmo-snd-card/QRD_TMO_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/msm8917-tmo-snd-card/QRD_TMO_General_cal.acdb \
     vendor/xiaomi/rova/proprietary/vendor/etc/acdbdata/QRD/msm8917-tmo-snd-card/QRD_TMO_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/msm8917-tmo-snd-card/QRD_TMO_Global_cal.acdb \
@@ -51,13 +52,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rova/proprietary/vendor/etc/acdbdata/QRD/msm8917-tmo-snd-card/QRD_TMO_Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/msm8917-tmo-snd-card/QRD_TMO_Hdmi_cal.acdb \
     vendor/xiaomi/rova/proprietary/vendor/etc/acdbdata/QRD/msm8917-tmo-snd-card/QRD_TMO_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/msm8917-tmo-snd-card/QRD_TMO_Headset_cal.acdb \
     vendor/xiaomi/rova/proprietary/vendor/etc/acdbdata/QRD/msm8917-tmo-snd-card/QRD_TMO_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/msm8917-tmo-snd-card/QRD_TMO_Speaker_cal.acdb \
-    vendor/xiaomi/rova/proprietary/vendor/etc/acdbdata/QRD/msm8920-sku7-snd-card/QRD_SKU7_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/msm8920-sku7-snd-card/QRD_SKU7_Bluetooth_cal.acdb \
-    vendor/xiaomi/rova/proprietary/vendor/etc/acdbdata/QRD/msm8920-sku7-snd-card/QRD_SKU7_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/msm8920-sku7-snd-card/QRD_SKU7_General_cal.acdb \
-    vendor/xiaomi/rova/proprietary/vendor/etc/acdbdata/QRD/msm8920-sku7-snd-card/QRD_SKU7_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/msm8920-sku7-snd-card/QRD_SKU7_Global_cal.acdb \
-    vendor/xiaomi/rova/proprietary/vendor/etc/acdbdata/QRD/msm8920-sku7-snd-card/QRD_SKU7_Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/msm8920-sku7-snd-card/QRD_SKU7_Handset_cal.acdb \
-    vendor/xiaomi/rova/proprietary/vendor/etc/acdbdata/QRD/msm8920-sku7-snd-card/QRD_SKU7_Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/msm8920-sku7-snd-card/QRD_SKU7_Hdmi_cal.acdb \
-    vendor/xiaomi/rova/proprietary/vendor/etc/acdbdata/QRD/msm8920-sku7-snd-card/QRD_SKU7_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/msm8920-sku7-snd-card/QRD_SKU7_Headset_cal.acdb \
-    vendor/xiaomi/rova/proprietary/vendor/etc/acdbdata/QRD/msm8920-sku7-snd-card/QRD_SKU7_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/msm8920-sku7-snd-card/QRD_SKU7_Speaker_cal.acdb \
     vendor/xiaomi/rova/proprietary/vendor/etc/acdbdata/QRD/msm8940-sku6-snd-card/QRD_SKU6_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/msm8940-sku6-snd-card/QRD_SKU6_Bluetooth_cal.acdb \
     vendor/xiaomi/rova/proprietary/vendor/etc/acdbdata/QRD/msm8940-sku6-snd-card/QRD_SKU6_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/msm8940-sku6-snd-card/QRD_SKU6_General_cal.acdb \
     vendor/xiaomi/rova/proprietary/vendor/etc/acdbdata/QRD/msm8940-sku6-snd-card/QRD_SKU6_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/msm8940-sku6-snd-card/QRD_SKU6_Global_cal.acdb \
