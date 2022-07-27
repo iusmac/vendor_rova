@@ -6,17 +6,17 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-	name: "libaudio_log_utils",
+	name: "libaudioparsers",
 	owner: "xiaomi",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm: {
-			srcs: ["proprietary/vendor/lib/libaudio_log_utils.so"],
+			srcs: ["proprietary/vendor/lib/libaudioparsers.so"],
 		},
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libaudio_log_utils.so"],
+			srcs: ["proprietary/vendor/lib64/libaudioparsers.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -92,14 +92,11 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libthermalclient.so"],
-		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libthermalclient.so"],
 		},
 	},
-	compile_multilib: "both",
+	compile_multilib: "64",
 	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
