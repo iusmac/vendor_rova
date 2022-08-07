@@ -50,7 +50,6 @@ $(call copy-vendor-files, \
 PRODUCT_PACKAGES += libaudioparsers
 $(call copy-vendor-files, \
     lib/btaudio_offload_if.so \
-    lib/hw/sound_trigger.primary.msm8937.so \
     lib/libacdb-fts.so \
     lib/libacdbloader.so \
     lib/libacdbrtac.so \
