@@ -21,7 +21,7 @@ $(call copy-vendor-files, \
 # }}}
 
 # GNSS (HIDL) {{{
-PRODUCT_PACKAGES += vendor.qti.gnss@4.0-service
+PRODUCT_PACKAGES += vendor.qti.gnss@4.1-service
 $(call copy-vendor-files, \
     lib64/libloc_socket.so \
     lib64/vendor.qti.gnss@1.0.so \
@@ -30,14 +30,15 @@ $(call copy-vendor-files, \
     lib64/vendor.qti.gnss@2.0.so \
     lib64/vendor.qti.gnss@2.1.so \
     lib64/vendor.qti.gnss@3.0.so \
-    lib64/vendor.qti.gnss@4.0-service.so \
     lib64/vendor.qti.gnss@4.0.so \
+    lib64/vendor.qti.gnss@4.1-service.so \
+    lib64/vendor.qti.gnss@4.1.so \
 )
 # }}}
 
 # GNSS (IMPL) {{{
 $(call copy-vendor-files, \
-    lib64/hw/vendor.qti.gnss@4.0-impl.so \
+    lib64/hw/vendor.qti.gnss@4.1-impl.so \
     lib64/libcdfw.so \
     lib64/libdataitems.so \
     lib64/libizat_client_api.so \
