@@ -33,6 +33,8 @@ $(call copy-system-files, etc/public.libraries-qti.txt)
 $(call copy-system-ext-files, \
     etc/permissions/qti_libpermissions.xml \
     etc/permissions/qti_permissions.xml \
+    etc/cdma_call_conf.xml \
+    etc/spn-conf.xml \
 )
 $(call copy-vendor-files, etc/public.libraries.txt)
 # }}}
