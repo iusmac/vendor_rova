@@ -52,21 +52,3 @@ $(call copy-vendor-files, \
     lib64/libxtadapter.so \
 )
 # }}}
-
-# Location {{{
-$(call copy-system-ext-files, \
-    etc/permissions/com.qti.location.sdk.xml \
-    etc/permissions/com.qualcomm.location.xml \
-    etc/permissions/izat.xt.srv.xml \
-    etc/permissions/privapp-permissions-com.qualcomm.location.xml \
-    framework/com.qti.location.sdk.jar \
-    framework/izat.xt.srv.jar \
-    lib64/vendor.qti.gnss@1.0.so \
-    lib64/vendor.qti.gnss@1.1.so \
-    lib64/vendor.qti.gnss@1.2.so \
-    lib64/vendor.qti.gnss@2.0.so \
-    lib64/vendor.qti.gnss@2.1.so \
-    lib64/vendor.qti.gnss@3.0.so \
-    lib64/vendor.qti.gnss@4.0.so \
-)
-# }}}
