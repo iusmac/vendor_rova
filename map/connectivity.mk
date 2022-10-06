@@ -12,27 +12,29 @@ $(call copy-product-files, \
     etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml \
     etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml \
 )
+PRODUCT_PACKAGES += \
+    com.quicinc.cne.api-V1.0-java  \
+    com.quicinc.cne.api-V1.1-java  \
+    com.quicinc.cne.constants-V1.0-java  \
+    com.quicinc.cne.constants-V2.0-java  \
+    com.quicinc.cne.constants-V2.1-java  \
+    vendor.qti.data.factory-V1.0-java  \
+    vendor.qti.data.factory-V2.0-java  \
+    vendor.qti.data.factory-V2.1-java  \
+    vendor.qti.data.slm-V1.0-java  \
+    vendor.qti.hardware.data.cne.internal.api-V1.0-java  \
+    vendor.qti.hardware.data.cne.internal.constants-V1.0-java  \
+    vendor.qti.hardware.data.cne.internal.server-V1.0-java  \
+    vendor.qti.hardware.data.connection-V1.0-java  \
+    vendor.qti.hardware.data.connection-V1.1-java  \
+    vendor.qti.hardware.data.dynamicdds-V1.0-java  \
+    vendor.qti.hardware.data.iwlan-V1.0-java  \
+    vendor.qti.hardware.data.latency-V1.0-java  \
+    vendor.qti.hardware.data.qmi-V1.0-java  \
+    vendor.qti.hardware.slmadapter-V1.0-java  \
+    vendor.qti.latency-V2.0-java
+
 $(call copy-system-ext-files, \
-    framework/com.quicinc.cne.api-V1.0-java.jar  \
-    framework/com.quicinc.cne.api-V1.1-java.jar  \
-    framework/com.quicinc.cne.constants-V1.0-java.jar  \
-    framework/com.quicinc.cne.constants-V2.0-java.jar  \
-    framework/com.quicinc.cne.constants-V2.1-java.jar  \
-    framework/vendor.qti.data.factory-V1.0-java.jar  \
-    framework/vendor.qti.data.factory-V2.0-java.jar  \
-    framework/vendor.qti.data.factory-V2.1-java.jar  \
-    framework/vendor.qti.data.slm-V1.0-java.jar  \
-    framework/vendor.qti.hardware.data.cne.internal.api-V1.0-java.jar  \
-    framework/vendor.qti.hardware.data.cne.internal.constants-V1.0-java.jar  \
-    framework/vendor.qti.hardware.data.cne.internal.server-V1.0-java.jar  \
-    framework/vendor.qti.hardware.data.connection-V1.0-java.jar  \
-    framework/vendor.qti.hardware.data.connection-V1.1-java.jar  \
-    framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar  \
-    framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar  \
-    framework/vendor.qti.hardware.data.latency-V1.0-java.jar  \
-    framework/vendor.qti.hardware.data.qmi-V1.0-java.jar  \
-    framework/vendor.qti.hardware.slmadapter-V1.0-java.jar  \
-    framework/vendor.qti.latency-V2.0-java.jar  \
     lib64/com.quicinc.cne.api@1.0.so  \
     lib64/com.quicinc.cne.api@1.1.so  \
     lib64/com.quicinc.cne.constants@1.0.so  \
@@ -113,9 +115,10 @@ $(call copy-vendor-files, \
 # }}}
 
 # IMS (uceService) {{{
-PRODUCT_PACKAGES += uceShimService
+PRODUCT_PACKAGES += \
+    uceShimService \
+    com.qualcomm.qti.uceservice-V2.0-java
 $(call copy-system-ext-files, \
-    framework/com.qualcomm.qti.uceservice-V2.0-java.jar \
     lib64/com.qualcomm.qti.uceservice@2.0.so \
 )
 # }}}
@@ -129,17 +132,20 @@ $(call copy-system-ext-files, \
     etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml \
     etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml \
     etc/permissions/com.qualcomm.qti.imscmservice.xml \
-    framework/com.qualcomm.qti.imscmservice-V2.0-java.jar \
-    framework/com.qualcomm.qti.imscmservice-V2.1-java.jar \
-    framework/com.qualcomm.qti.imscmservice-V2.2-java.jar \
-    framework/vendor.qti.ims.callcapability-V1.0-java.jar \
-    framework/vendor.qti.ims.callinfo-V1.0-java.jar \
-    framework/vendor.qti.ims.factory-V1.0-java.jar \
-    framework/vendor.qti.ims.factory-V1.1-java.jar \
-    framework/vendor.qti.ims.rcsconfig-V1.0-java.jar \
-    framework/vendor.qti.ims.rcsconfig-V1.1-java.jar \
-    framework/vendor.qti.ims.rcsconfig-V2.0-java.jar \
-    framework/vendor.qti.ims.rcsconfig-V2.1-java.jar \
+)
+PRODUCT_PACKAGES += \
+    com.qualcomm.qti.imscmservice-V2.0-java \
+    com.qualcomm.qti.imscmservice-V2.1-java \
+    com.qualcomm.qti.imscmservice-V2.2-java \
+    vendor.qti.ims.callcapability-V1.0-java \
+    vendor.qti.ims.callinfo-V1.0-java \
+    vendor.qti.ims.factory-V1.0-java \
+    vendor.qti.ims.factory-V1.1-java \
+    vendor.qti.ims.rcsconfig-V1.0-java \
+    vendor.qti.ims.rcsconfig-V1.1-java \
+    vendor.qti.ims.rcsconfig-V2.0-java \
+    vendor.qti.ims.rcsconfig-V2.1-java
+$(call copy-system-ext-files, \
     lib64/com.qualcomm.qti.imscmservice@1.0.so \
     lib64/com.qualcomm.qti.imscmservice@2.0.so \
     lib64/com.qualcomm.qti.imscmservice@2.1.so \
@@ -222,8 +228,9 @@ $(call copy-vendor-files, \
 # }}}
 
 # QTI Telephony framework {{{
+PRODUCT_PACKAGES += \
+    qti-telephony-common
 $(call copy-system-ext-files, \
-    framework/qti-telephony-common.jar \
     lib64/vendor.qti.hardware.radio.qtiradio@1.0.so \
     lib64/vendor.qti.hardware.radio.qtiradio@2.0.so \
     lib64/vendor.qti.hardware.radio.qtiradio@2.1.so \
@@ -359,10 +366,11 @@ PRODUCT_PACKAGES += atfwd
 PRODUCT_PACKAGES += DeviceInfo
 
 # Telephony (eMBMS) {{{
-PRODUCT_PACKAGES += embms
+PRODUCT_PACKAGES += \
+    embms \
+    embmslibrary
 $(call copy-system-ext-files, \
     etc/permissions/embms.xml \
-    framework/embmslibrary.jar \
 )
 # }}}
 
@@ -370,9 +378,10 @@ $(call copy-system-ext-files, \
 PRODUCT_PACKAGES += NetworkSetting
 
 # Telephony (QcrilHook) {{{
+PRODUCT_PACKAGES += \
+    qcrilhook
 $(call copy-system-ext-files, \
     etc/permissions/qcrilhook.xml \
-    framework/qcrilhook.jar \
     lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so \
 )
 # }}}
@@ -384,19 +393,21 @@ PRODUCT_PACKAGES += qcrilmsgtunnel
 PRODUCT_PACKAGES += QtiTelephonyService
 
 # Telephony (uimlpa) {{{
-PRODUCT_PACKAGES += uimlpaservice
+PRODUCT_PACKAGES += \
+    uimlpaservice \
+    uimlpalibrary
 $(call copy-system-ext-files, \
     etc/permissions/lpa.xml \
-    framework/uimlpalibrary.jar \
     lib64/vendor.qti.hardware.radio.lpa@1.0.so \
 )
 # }}}
 
 # Telephony (uimremoteclient) {{{
-PRODUCT_PACKAGES += uimremoteclient
+PRODUCT_PACKAGES += \
+    uimremoteclient \
+    uimremoteclientlibrary
 $(call copy-system-ext-files, \
     etc/permissions/uimremoteclient.xml \
-    framework/uimremoteclientlibrary.jar \
     lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so \
     lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so \
     lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so \
@@ -404,10 +415,11 @@ $(call copy-system-ext-files, \
 # }}}
 
 # Telephony (uimremoteserver) {{{
-PRODUCT_PACKAGES += uimremoteserver
+PRODUCT_PACKAGES += \
+    uimremoteserver \
+    uimremoteserverlibrary
 $(call copy-system-ext-files, \
     etc/permissions/uimremoteserver.xml \
-    framework/uimremoteserverlibrary.jar \
     lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so \
 )
 # }}}

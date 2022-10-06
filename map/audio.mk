@@ -87,8 +87,8 @@ $(call copy-vendor-files, \
 # Audiosphere {{{
 $(call copy-system-ext-files, \
     etc/permissions/audiosphere.xml \
-    framework/audiosphere.jar \
 )
+PRODUCT_PACKAGES += audiosphere \
 $(call copy-vendor-files, lib/soundfx/libasphere.so)
 # }}}
 

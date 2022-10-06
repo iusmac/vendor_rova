@@ -1,18 +1,17 @@
 # vim: set fdm=marker:
 # DPM (Device Policy Manager) {{{
-PRODUCT_PACKAGES += dpmserviceapp
-$(call copy-system-files, \
-    framework/tcmclient.jar \
-    framework/tcmiface.jar \
-)
+PRODUCT_PACKAGES += \
+    com.qti.dpmframework \
+    dpmapi \
+    dpmserviceapp \
+    tcmclient \
+    tcmiface
 $(call copy-system-ext-files, \
     bin/dpmd \
     etc/dpm/dpm.conf \
     etc/init/dpmd.rc \
     etc/permissions/com.qti.dpmframework.xml \
     etc/permissions/dpmapi.xml \
-    framework/com.qti.dpmframework.jar \
-    framework/dpmapi.jar \
     lib64/com.qualcomm.qti.dpm.api@1.0.so \
     lib64/libdpmctmgr.so \
     lib64/libdpmfdmgr.so \
@@ -51,9 +50,10 @@ $(call copy-vendor-files, \
 # }}}
 
 # Power-off Alarm {{{
-PRODUCT_PACKAGES += PowerOffAlarm
+PRODUCT_PACKAGES += \
+    PowerOffAlarm \
+    vendor.qti.hardware.alarm-V1.0-java
 $(call copy-system-ext-files, \
-    framework/vendor.qti.hardware.alarm-V1.0-java.jar \
     lib64/vendor.qti.hardware.alarm@1.0.so \
 )
 $(call copy-vendor-files, \
