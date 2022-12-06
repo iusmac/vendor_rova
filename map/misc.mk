@@ -30,6 +30,10 @@ $(call copy-vendor-files, \
 )
 # }}}
 
+# Google Settings Intelligence app
+PRODUCT_PACKAGES += \
+    SettingsIntelligenceGooglePrebuilt
+
 # Subsystem Restart {{{
 $(call copy-vendor-files, \
     bin/ssr_diag \

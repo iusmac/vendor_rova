@@ -107,6 +107,23 @@ android_app_import {
 }
 
 android_app_import {
+	name: "SettingsIntelligenceGooglePrebuilt",
+	owner: "google",
+	apk: "proprietary/product/priv-app/SettingsIntelligenceGooglePrebuilt/SettingsIntelligenceGooglePrebuilt.apk",
+	overrides: ["SettingsIntelligence"],
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+	required: [
+		"privapp_whitelist_com.google.android.settings.intelligence",
+		"default-permissions_com.google.android.settings.intelligence"
+	],
+}
+
+android_app_import {
 	name: "TimeService",
 	owner: "xiaomi",
 	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
@@ -133,6 +150,14 @@ dex_import {
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar"],
 	system_ext_specific: true,
+}
+
+prebuilt_etc {
+	name: "default-permissions_com.google.android.settings.intelligence",
+	product_specific: true,
+	sub_dir: "default-permissions",
+	src: "proprietary/product/etc/default-permissions/default-permissions_com.google.android.settings.intelligence.xml",
+	filename_from_src: true,
 }
 
 android_app_import {
@@ -242,6 +267,14 @@ prebuilt_etc_xml {
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
+}
+
+prebuilt_etc {
+	name: "privapp_whitelist_com.google.android.settings.intelligence",
+	product_specific: true,
+	sub_dir: "permissions",
+	src: "proprietary/product/etc/permissions/privapp_whitelist_com.google.android.settings.intelligence.xml",
+	filename_from_src: true,
 }
 
 android_app_import {
