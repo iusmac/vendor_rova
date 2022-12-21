@@ -17,7 +17,7 @@ $(call copy-system-ext-files, \
     lib64/libdpmfdmgr.so \
     lib64/libdpmframework.so \
     lib64/libdpmtcm.so \
-    lib64/libslmiptablemgr.so \
+    lib64/libmwqemiptablemgr.so \
 )
 $(call copy-vendor-files, \
     bin/dpmQmiMgr \
@@ -36,6 +36,7 @@ $(call copy-system-ext-files, \
     etc/spn-conf.xml \
 )
 $(call copy-vendor-files, etc/public.libraries.txt)
+$(call copy-vendor-files, lib64/libsoc_helper.so)
 # }}}
 
 # IRQ Balancer

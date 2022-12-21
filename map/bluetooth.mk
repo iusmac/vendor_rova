@@ -24,6 +24,9 @@ $(call copy-system-ext-files, \
 # Bluetooth Audio {{{
 $(call copy-vendor-files, \
     lib64/hw/audio.bluetooth_qti.default.so \
+    lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so \
+    lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so \
     lib64/libbluetooth_audio_session_qti.so \
+    lib64/libbluetooth_audio_session_qti_2_1.so \
 )
 # }}}

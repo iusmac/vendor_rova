@@ -16,7 +16,7 @@ $(call copy-vendor-files, \
 $(call copy-vendor-files, \
     bin/adsprpcd \
     bin/dspservice \
-    etc/init/vendor.qti.adsprpc-guestos-service.rc \
+    etc/init/vendor.qti.adsprpc-guestos-sensorspd-service.rc \
     etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
     etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
     lib/libfastcvadsp_stub.so \
@@ -32,6 +32,8 @@ $(call copy-vendor-files, \
 
 # aDSP Modules {{{
 $(call copy-vendor-files, \
+    lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so \
+    lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so \
     lib/rfsa/adsp/libapps_mem_heap.so \
     lib/rfsa/adsp/libdspCV_skel.so \
     lib/rfsa/adsp/libfastcvadsp.so \

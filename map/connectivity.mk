@@ -21,6 +21,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.data.factory-V1.0-java  \
     vendor.qti.data.factory-V2.0-java  \
     vendor.qti.data.factory-V2.1-java  \
+    vendor.qti.data.factory-V2.2-java  \
+    vendor.qti.data.factory-V2.3-java  \
+    vendor.qti.data.mwqem-V1.0-java  \
     vendor.qti.data.slm-V1.0-java  \
     vendor.qti.hardware.data.cne.internal.api-V1.0-java  \
     vendor.qti.hardware.data.cne.internal.constants-V1.0-java  \
@@ -31,9 +34,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.iwlan-V1.0-java  \
     vendor.qti.hardware.data.latency-V1.0-java  \
     vendor.qti.hardware.data.qmi-V1.0-java  \
+    vendor.qti.hardware.mwqemadapter-V1.0-java  \
     vendor.qti.hardware.slmadapter-V1.0-java  \
-    vendor.qti.latency-V2.0-java
-
+    vendor.qti.latency-V2.0-java  \
+    vendor.qti.latency-V2.1-java
 $(call copy-system-ext-files, \
     lib64/com.quicinc.cne.api@1.0.so  \
     lib64/com.quicinc.cne.api@1.1.so  \
@@ -43,6 +47,9 @@ $(call copy-system-ext-files, \
     lib64/vendor.qti.data.factory@1.0.so  \
     lib64/vendor.qti.data.factory@2.0.so  \
     lib64/vendor.qti.data.factory@2.1.so  \
+    lib64/vendor.qti.data.factory@2.2.so  \
+    lib64/vendor.qti.data.factory@2.3.so  \
+    lib64/vendor.qti.data.mwqem@1.0.so  \
     lib64/vendor.qti.data.slm@1.0.so  \
     lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so  \
     lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so  \
@@ -53,9 +60,12 @@ $(call copy-system-ext-files, \
     lib64/vendor.qti.hardware.data.dynamicdds@1.0.so  \
     lib64/vendor.qti.hardware.data.iwlan@1.0.so  \
     lib64/vendor.qti.hardware.data.latency@1.0.so  \
+    lib64/vendor.qti.hardware.data.lce@1.0.so  \
     lib64/vendor.qti.hardware.data.qmi@1.0.so  \
+    lib64/vendor.qti.hardware.mwqemadapter@1.0.so  \
     lib64/vendor.qti.hardware.slmadapter@1.0.so  \
     lib64/vendor.qti.latency@2.0.so  \
+    lib64/vendor.qti.latency@2.1.so  \
 )
 
 $(call copy-vendor-files, \
@@ -68,22 +78,28 @@ $(call copy-vendor-files, \
     lib64/libwqe.so \
     lib64/vendor.qti.data.factory@2.0.so \
     lib64/vendor.qti.data.factory@2.1.so \
+    lib64/vendor.qti.data.factory@2.2.so \
+    lib64/vendor.qti.data.factory@2.3.so \
+    lib64/vendor.qti.data.mwqem@1.0.so \
     lib64/vendor.qti.data.slm@1.0.so \
     lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so \
     lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so \
     lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so \
     lib64/vendor.qti.hardware.data.dynamicdds@1.0.so \
     lib64/vendor.qti.hardware.data.latency@1.0.so \
+    lib64/vendor.qti.hardware.data.lce@1.0.so \
     lib64/vendor.qti.hardware.data.qmi@1.0.so \
+    lib64/vendor.qti.hardware.mwqemadapter@1.0.so \
     lib64/vendor.qti.hardware.slmadapter@1.0.so \
     lib64/vendor.qti.latency@2.0.so \
+    lib64/vendor.qti.latency@2.1.so \
 )
 # }}}
 
 # CNE configs {{{
 $(call copy-vendor-files, \
-    etc/cne/profileSlm.xml \
-    etc/cne/slm.conf \
+    etc/cne/mwqem.conf \
+    etc/cne/profileMwqem.xml \
     etc/cne/wqeclient/ATT/ATT_profile1.xml \
     etc/cne/wqeclient/ATT/ATT_profile2.xml \
     etc/cne/wqeclient/ATT/ATT_profile3.xml \
@@ -193,6 +209,7 @@ $(call copy-vendor-files, \
     lib64/com.qualcomm.qti.uceservice@2.0.so \
     lib64/com.qualcomm.qti.uceservice@2.1.so \
     lib64/com.qualcomm.qti.uceservice@2.2.so \
+    lib64/com.qualcomm.qti.uceservice@2.3.so \
     lib64/lib-imsSDP.so \
     lib64/lib-imscmservice.so \
     lib64/lib-imsdpl.so \
@@ -207,9 +224,11 @@ $(call copy-vendor-files, \
     lib64/vendor.qti.ims.callcapability@1.0.so \
     lib64/vendor.qti.ims.callinfo@1.0.so \
     lib64/vendor.qti.ims.factory@1.0.so \
+    lib64/vendor.qti.ims.factory@1.1.so \
     lib64/vendor.qti.ims.rcsconfig@1.0.so \
     lib64/vendor.qti.ims.rcsconfig@1.1.so \
     lib64/vendor.qti.ims.rcsconfig@2.0.so \
+    lib64/vendor.qti.ims.rcsconfig@2.1.so \
 )
 # }}}
 
@@ -291,6 +310,7 @@ $(call copy-vendor-files, \
     radio/qcril_database/upgrade/7_version_update_ecc_table.sql \
     radio/qcril_database/upgrade/8_version_update_ecc_table.sql \
     radio/qcril_database/upgrade/9_version_update_ecc_table.sql \
+    radio/qcril_database/upgrade/10_version_update_ecc_table.sql \
 )
 # }}}
 
@@ -313,7 +333,6 @@ $(call copy-vendor-files, \
 $(call copy-vendor-files, \
     bin/hw/qcrild \
     etc/init/qcrild.rc \
-    lib64/libQmiservices.so \
     lib64/liblqe.so \
     lib64/libqcrilFramework.so \
     lib64/libqcrildatactl.so \
@@ -341,7 +360,6 @@ $(call copy-vendor-files, \
     lib64/vendor.qti.hardware.radio.lpa@1.0.so \
     lib64/vendor.qti.hardware.radio.lpa@1.1.so \
     lib64/vendor.qti.hardware.radio.lpa@1.2.so \
-    lib64/vendor.qti.hardware.radio.qcriNvOpt@1.0.so \
     lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so \
     lib64/vendor.qti.hardware.radio.qtiradio@1.0.so \
     lib64/vendor.qti.hardware.radio.qtiradio@2.0.so \
