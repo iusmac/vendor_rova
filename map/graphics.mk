@@ -10,8 +10,6 @@ $(call copy-vendor-files, \
     lib/hw/vulkan.adreno.so \
     lib/libC2D2.so \
     lib/libCB.so \
-    lib/libEGL_adreno.so \
-    lib/libGLESv2_adreno.so \
     lib/libOpenCL.so \
     lib/libadreno_utils.so \
     lib/libc2d30-a3xx.so \
@@ -19,7 +17,6 @@ $(call copy-vendor-files, \
     lib/libgsl.so \
     lib/libllvm-glnext.so \
     lib/libllvm-qcom.so \
-    lib/libq3dtools_adreno.so \
     lib64/egl/eglSubDriverAndroid.so \
     lib64/egl/libEGL_adreno.so \
     lib64/egl/libGLESv1_CM_adreno.so \
@@ -29,8 +26,6 @@ $(call copy-vendor-files, \
     lib64/hw/vulkan.adreno.so \
     lib64/libC2D2.so \
     lib64/libCB.so \
-    lib64/libEGL_adreno.so \
-    lib64/libGLESv2_adreno.so \
     lib64/libOpenCL.so \
     lib64/libadreno_utils.so \
     lib64/libc2d30-a3xx.so \
@@ -38,7 +33,6 @@ $(call copy-vendor-files, \
     lib64/libgsl.so \
     lib64/libllvm-glnext.so \
     lib64/libllvm-qcom.so \
-    lib64/libq3dtools_adreno.so \
 )
 # }}}
 
