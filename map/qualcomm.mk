@@ -66,6 +66,13 @@ $(call copy-vendor-files, \
 )
 # }}}
 
+# QDMA {{{
+$(call copy-vendor-files, \
+    lib64/libqcc_file_agent.so \
+    lib64/vendor.qti.hardware.qccsyshal@1.0.so \
+)
+# }}}
+
 # QMI (Qualcomm MSM Interface) {{{
 $(call copy-system-ext-files, \
     lib64/libdiag_system.so \

@@ -442,6 +442,9 @@ $(call copy-system-ext-files, \
 )
 # }}}
 
+# WiGig
+$(call copy-vendor-files, lib64/libaoa.so)
+
 # WLAN {{{
 $(call copy-vendor-files, \
     bin/ptt_socket_app \
