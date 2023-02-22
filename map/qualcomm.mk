@@ -67,6 +67,13 @@ $(call copy-vendor-files, \
 # }}}
 
 # QDMA {{{
+$(call copy-system-ext-files, \
+    bin/qccsyshalservice \
+    etc/init/vendor.qti.hardware.qccsyshal@1.0-service.rc \
+    lib64/libqcc_file_agent_sys.so \
+    lib64/vendor.qti.hardware.qccsyshal@1.0-halimpl.so \
+    lib64/vendor.qti.hardware.qccsyshal@1.0.so \
+)
 $(call copy-vendor-files, \
     lib64/libqcc_file_agent.so \
     lib64/vendor.qti.hardware.qccsyshal@1.0.so \
