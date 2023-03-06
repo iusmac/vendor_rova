@@ -1,7 +1,9 @@
 # vim: set fdm=marker:
 # CACert {{{
+PRODUCT_PACKAGES += CACertService
 $(call copy-vendor-files, \
     lib64/libcacertclient.so \
+    lib64/libjnihelper.so \
     lib64/vendor.qti.hardware.cacert@1.0.so \
 )
 # }}}
