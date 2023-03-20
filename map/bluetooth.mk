@@ -14,13 +14,6 @@ $(call copy-vendor-files, \
 )
 # }}}
 
-# Bluetooth (aptX) {{{
-$(call copy-system-ext-files, \
-    lib64/libaptX_encoder.so \
-    lib64/libaptXHD_encoder.so \
-)
-# }}}
-
 # Bluetooth Audio {{{
 $(call copy-vendor-files, \
     lib64/hw/audio.bluetooth_qti.default.so \
