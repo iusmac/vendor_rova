@@ -7,7 +7,6 @@ $(call copy-vendor-files, \
     lib/egl/libGLESv2_adreno.so \
     lib/egl/libq3dtools_adreno.so \
     lib/egl/libq3dtools_esx.so \
-    lib/vulkan.adreno.so \
     lib/libC2D2.so \
     lib/libCB.so \
     lib/libOpenCL.so \
@@ -23,7 +22,6 @@ $(call copy-vendor-files, \
     lib64/egl/libGLESv2_adreno.so \
     lib64/egl/libq3dtools_adreno.so \
     lib64/egl/libq3dtools_esx.so \
-    lib64/vulkan.adreno.so \
     lib64/libC2D2.so \
     lib64/libCB.so \
     lib64/libOpenCL.so \
