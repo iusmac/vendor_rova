@@ -6,7 +6,6 @@ $(call copy-vendor-files, \
     lib64/libGPreqcancel_svc.so \
     lib64/libQSEEComAPI.so \
     lib64/libStDrvInt.so \
-    lib64/libdiag.so \
     lib64/libdrmfs.so \
     lib64/libdrmtime.so \
     lib64/libqisl.so \

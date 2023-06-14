@@ -95,6 +95,7 @@ $(call copy-vendor-files, \
     lib/libqmi_common_so.so \
     lib/libqmi_encdec.so \
     lib64/libconfigdb.so \
+    lib64/libdiag.so \
     lib64/libdsi_netctrl.so \
     lib64/libdsutils.so \
     lib64/libidl.so \
