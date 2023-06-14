@@ -271,8 +271,10 @@ $(call copy-vendor-files, \
 $(call copy-vendor-files, \
     bin/port-bridge \
     bin/qti \
+    etc/data/dsi_config.xml \
     etc/init/dataqti.rc \
     etc/init/port-bridge.rc \
+    lib64/libdsi_netctrl.so \
 )
 # }}}
 
@@ -290,6 +292,8 @@ $(call copy-vendor-files, \
     etc/data/netmgr_config.xml \
     etc/data/netmgr_config_override.xml \
     etc/init/netmgrd.rc \
+    lib64/libconfigdb.so \
+    lib64/libnetmgr.so \
     lib64/libnetmgr_common.so \
     lib64/libnetmgr_nr_fusion.so \
     lib64/libnetmgr_rmnet_ext.so \

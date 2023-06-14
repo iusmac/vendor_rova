@@ -89,18 +89,14 @@ $(call copy-system-ext-files, \
     lib64/vendor.qti.diaghal@1.0.so \
 )
 $(call copy-vendor-files, \
-    etc/data/dsi_config.xml \
     lib/libdiag.so \
     lib/libqmi_cci.so \
     lib/libqmi_common_so.so \
     lib/libqmi_encdec.so \
-    lib64/libconfigdb.so \
     lib64/libdiag.so \
-    lib64/libdsi_netctrl.so \
     lib64/libdsutils.so \
     lib64/libidl.so \
     lib64/libmdmdetect.so \
-    lib64/libnetmgr.so \
     lib64/libqdi.so \
     lib64/libqmi.so \
     lib64/libqmi_cci.so \
