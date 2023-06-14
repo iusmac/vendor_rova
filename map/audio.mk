@@ -53,7 +53,6 @@ $(call copy-vendor-files, \
 # Audio {{{
 PRODUCT_PACKAGES += libaudioparsers
 $(call copy-vendor-files, \
-    lib/btaudio_offload_if.so \
     lib/libacdb-fts.so \
     lib/libacdbloader.so \
     lib/libacdbrtac.so \
@@ -62,8 +61,6 @@ $(call copy-vendor-files, \
     lib/libadpcmdec.so \
     lib/libaudcal.so \
     lib/libaudio_log_utils.so \
-    lib/libbluetooth_audio_session_qti.so \
-    lib/libdiag.so \
     lib/libdrc.so \
     lib/libgcs-calwrapper.so \
     lib/libgcs-ipc.so \

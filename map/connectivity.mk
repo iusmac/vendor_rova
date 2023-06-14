@@ -325,7 +325,6 @@ $(call copy-vendor-files, \
 $(call copy-vendor-files, \
     bin/tftp_server \
     etc/init/vendor.qti.tftp.rc \
-    lib64/libqsocket.so \
 )
 # }}}
 

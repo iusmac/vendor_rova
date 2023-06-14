@@ -35,8 +35,11 @@ $(call copy-system-ext-files, \
     etc/cdma_call_conf.xml \
     etc/spn-conf.xml \
 )
-$(call copy-vendor-files, etc/public.libraries.txt)
-$(call copy-vendor-files, lib64/libsoc_helper.so)
+$(call copy-vendor-files, \
+    etc/public.libraries.txt \
+    lib64/libqsocket.so \
+    lib64/libsoc_helper.so \
+)
 # }}}
 
 # IRQ Balancer
@@ -87,6 +90,7 @@ $(call copy-system-ext-files, \
 )
 $(call copy-vendor-files, \
     etc/data/dsi_config.xml \
+    lib/libdiag.so \
     lib/libqmi_cci.so \
     lib/libqmi_common_so.so \
     lib/libqmi_encdec.so \
