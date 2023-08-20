@@ -383,6 +383,9 @@ $(call copy-vendor-files, \
 # Telephony (ATFWD)
 PRODUCT_PACKAGES += atfwd
 
+# Telephony (datastatusnotification)
+PRODUCT_PACKAGES += datastatusnotification
+
 # Telephony (DeviceInfo)
 PRODUCT_PACKAGES += DeviceInfo
 
