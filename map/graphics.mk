@@ -4,10 +4,8 @@ $(call copy-vendor-files, \
     lib/egl/eglSubDriverAndroid.so \
     lib/egl/libEGL_adreno.so \
     lib/egl/libGLESv1_CM_adreno.so \
-    lib/egl/libGLESv2_adreno.so \
     lib/egl/libq3dtools_adreno.so \
     lib/egl/libq3dtools_esx.so \
-    lib/libC2D2.so \
     lib/libCB.so \
     lib/libOpenCL.so \
     lib/libadreno_utils.so \
@@ -19,10 +17,8 @@ $(call copy-vendor-files, \
     lib64/egl/eglSubDriverAndroid.so \
     lib64/egl/libEGL_adreno.so \
     lib64/egl/libGLESv1_CM_adreno.so \
-    lib64/egl/libGLESv2_adreno.so \
     lib64/egl/libq3dtools_adreno.so \
     lib64/egl/libq3dtools_esx.so \
-    lib64/libC2D2.so \
     lib64/libCB.so \
     lib64/libOpenCL.so \
     lib64/libadreno_utils.so \
@@ -32,6 +28,9 @@ $(call copy-vendor-files, \
     lib64/libllvm-glnext.so \
     lib64/libllvm-qcom.so \
 )
+PRODUCT_PACKAGES += \
+    libGLESv2_adreno \
+    libC2D2
 # }}}
 
 # Graphics (Postprocessing) - mm-pp-dpps {{{
