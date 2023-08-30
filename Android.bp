@@ -410,6 +410,26 @@ dex_import {
 	jars: ["proprietary/system/framework/tcmiface.jar"],
 }
 
+cc_prebuilt_library_shared {
+	name: "libsensor1",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libsensor1.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libsensor1.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
 android_app_import {
 	name: "uceShimService",
 	owner: "xiaomi",
