@@ -20,14 +20,15 @@ $(call copy-vendor-files, \
     etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
     etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
     lib/libfastcvadsp_stub.so \
-    lib/libfastcvopt.so \
     lib/libsysmon_cdsp_skel.so \
     lib/vendor.qti.hardware.dsp@1.0.so \
     lib64/libadsp_default_listener.so \
-    lib64/libadsprpc.so \
     lib64/libsysmon_cdsp_skel.so \
     lib64/vendor.qti.hardware.dsp@1.0.so \
 )
+PRODUCT_PACKAGES += \
+    libfastcvopt \
+    libadsprpc
 # }}}
 
 # aDSP Modules {{{
