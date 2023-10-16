@@ -1,13 +1,6 @@
 # vim: set fdm=marker:
-# Charger {{{
+# Charger
 $(call copy-vendor-files, bin/hvdcp_opti)
-$(call copy-product-files, \
-	etc/res/values/charger/animation.txt \
-	etc/res/images/charger/battery_fail.png \
-	etc/res/images/charger/battery_scale.png \
-	etc/res/images/charger/main_font.png \
-)
-# }}}
 
 # ConsumerIR - LED - for rolex
 $(call copy-vendor-files, lib64/hw/consumerir.led.so)
