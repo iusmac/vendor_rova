@@ -4,6 +4,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),rova)
+ifneq ($(filter rova,$(TARGET_DEVICE)),)
 
 endif
