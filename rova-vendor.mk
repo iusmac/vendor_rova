@@ -1022,7 +1022,6 @@ PRODUCT_PACKAGES += \
     tftp_server \
     thermal-engine \
     time_daemon \
-    wcnss_service-rova \
     xtra-daemon \
     xtwifi-client \
     xtwifi-inet-agent \
