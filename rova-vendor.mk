@@ -158,25 +158,14 @@ PRODUCT_PACKAGES += \
     libGLESv2_adreno \
     libq3dtools_adreno \
     libq3dtools_esx \
-    libAlacSwDec \
-    libApeSwDec \
     libC2D2 \
     libCB \
     libMpeg4SwEncoder \
-    libOmxAacDec \
-    libOmxAlacDec \
-    libOmxAlacDecSw \
-    libOmxAmrDec \
-    libOmxAmrwbplusDec \
-    libOmxApeDec \
-    libOmxApeDecSw \
-    libOmxEvrcDec \
     libOmxG711Dec \
     libOmxQcelp13Dec \
     libOmxSwVdec \
     libOmxSwVencMpeg4 \
     libOmxVpp \
-    libOmxWmaDec \
     libOpenCL \
     libadreno_utils \
     libadsprpc \
